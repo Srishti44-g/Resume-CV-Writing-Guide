@@ -1,0 +1,274 @@
+%-----------------------------------------
+% SDE Resume for B.Tech CSE Freshers
+% ATS-Friendly LaTeX Template
+%-----------------------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+% PACKAGES
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[english]{babel}
+
+% PAGE LAYOUT
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0pt}
+
+% COLORS
+\definecolor{PrimaryColor}{RGB}{0,76,153}
+
+% SECTION FORMATTING
+\titleformat{\section}
+  {\color{PrimaryColor}\scshape\raggedright
+  \large\bfseries}
+  {}{0em}{}[\color{PrimaryColor}\titlerule]
+
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+
+% PDF TEXT EXTRACTION
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% CUSTOM COMMANDS
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+  \begin{tabular*}{0.97\textwidth}
+    {l@{\extracolsep{\fill}}r}
+    \textbf{\color{PrimaryColor}#1} &
+    \textbf{\small #2} \\
+    \textit{\small #3} &
+    \textit{\small #4} \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.15in,label={}]
+}
+\newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}
+}
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.25in]
+}
+\newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-4pt}
+}
+
+% DOCUMENT START
+\begin{document}
+
+% HEADER
+\begin{center}
+    {\Huge \scshape \color{PrimaryColor}
+    Aarav Sharma}\\[3pt]
+
+    \small Software Development Engineer (SDE) Aspirant
+    \textbar{} B.Tech CSE\\[4pt]
+
+    \small
+    Bilaspur, Chhattisgarh
+    \textbar{} +91-9876543210
+    \textbar{}
+    \href{mailto:aarav.sharma@example.com}
+    {aarav.sharma@example.com}\\[3pt]
+
+    \href{https://linkedin.com/in/your-profile}
+    {LinkedIn}
+    \textbar{}
+    \href{https://github.com/your-username}
+    {GitHub}
+    \textbar{}
+    \href{https://leetcode.com/your-profile/}
+    {LeetCode}
+\end{center}
+
+% EDUCATION
+\section{Education}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Government Engineering College, Bilaspur}
+  {2026 -- 2030}
+  {B.Tech in Computer Science and Engineering}
+  {Bilaspur, India}
+
+\resumeItemListStart
+  \resumeItem{CGPA: 8.50/10 (illustrative)}
+\resumeItemListEnd
+
+\resumeSubheading
+  {ABC Senior Secondary School}
+  {2026}
+  {Class XII -- Science (Mathematics)}
+  {Chhattisgarh}
+
+\resumeItemListStart
+  \resumeItem{Percentage: 85\% (illustrative)}
+\resumeItemListEnd
+
+\resumeSubheading
+  {ABC High School}
+  {2024}
+  {Class X}
+  {Chhattisgarh}
+
+\resumeItemListStart
+  \resumeItem{Percentage: 90\% (illustrative)}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% TECHNICAL SKILLS
+\section{Technical Skills}
+
+\begin{itemize}[leftmargin=0.15in,label={}]
+\small{\item{
+  \textbf{Languages:}
+  C++, Java, Python \\
+
+  \textbf{Core CS:}
+  Data Structures and Algorithms,
+  Object-Oriented Programming,
+  Operating Systems, DBMS, Computer Networks \\
+
+  \textbf{Web Development:}
+  HTML, CSS, JavaScript, React \\
+
+  \textbf{Backend and Databases:}
+  Node.js, Express.js, REST APIs, MySQL \\
+
+  \textbf{Developer Tools:}
+  Git, GitHub, VS Code, Postman \\
+
+  \textbf{Problem-Solving:}
+  Arrays, Strings, Linked Lists, Stacks, Queues,
+  Trees, Graphs, Sorting, Searching, Recursion
+}}
+\end{itemize}
+
+% PROJECTS
+\section{Projects}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Task Management REST API}
+  {2026}
+  {Java, Spring Boot, MySQL, REST APIs}
+  {Backend Development}
+
+\resumeItemListStart
+  \resumeItem{Developed a REST API to create, retrieve,
+  update, and delete tasks using CRUD operations.}
+
+  \resumeItem{Designed relational database tables to
+  store task details, status, and timestamps.}
+
+  \resumeItem{Implemented input validation and
+  structured exception handling for API requests.}
+
+  \resumeItem{Documented endpoints and tested API
+  responses using Postman.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Student Record Management System}
+  {2026}
+  {C++, OOP, Data Structures, File Handling}
+  {Software Development}
+
+\resumeItemListStart
+  \resumeItem{Built a student record application supporting
+  insertion, searching, updating, and deletion.}
+
+  \resumeItem{Applied object-oriented design and
+  appropriate data structures to organize records.}
+
+  \resumeItem{Used file handling to persist information
+  between program executions.}
+
+  \resumeItem{Tested normal and invalid inputs to improve
+  correctness and reliability.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Personal Portfolio Website}
+  {2026}
+  {HTML, CSS, JavaScript}
+  {Web Development}
+
+\resumeItemListStart
+  \resumeItem{Developed a responsive portfolio website
+  presenting technical skills, projects, and education.}
+
+  \resumeItem{Implemented reusable page sections and
+  interactive navigation for improved usability.}
+
+  \resumeItem{Managed source code using Git and GitHub
+  and published the website online.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% DSA AND CODING
+\section{Problem-Solving and Coding}
+
+\begin{itemize}[leftmargin=0.25in]
+  \resumeItem{Practiced DSA problems involving arrays,
+  strings, recursion, sorting, searching, and trees.}
+
+  \resumeItem{Analyzed time and space complexity using
+  Big-O notation.}
+
+  \resumeItem{Coding profile:
+  \href{https://leetcode.com/your-profile/}{LeetCode}
+  \textbar{}
+  \href{https://github.com/your-username}{GitHub}}
+\end{itemize}
+
+% CERTIFICATIONS
+\section{Certifications}
+
+\begin{itemize}[leftmargin=0.25in]
+  \resumeItem{Data Structures and Algorithms --
+  Course Provider}
+
+  \resumeItem{Object-Oriented Programming with Java --
+  Course Provider}
+
+  \resumeItem{SQL and Relational Databases --
+  Course Provider}
+\end{itemize}
+
+% ACHIEVEMENTS
+\section{Achievements and Activities}
+
+\begin{itemize}[leftmargin=0.25in]
+  \resumeItem{Participated in coding contests,
+  hackathons, or college technical events.}
+
+  \resumeItem{Collaborated with peers on programming
+  assignments and software projects.}
+\end{itemize}
+
+\end{document}
+```
